@@ -1,5 +1,4 @@
 #!groovy
-tools {nodejs "NODEJS"} 
 properties(
     [
         [$class: 'BuildDiscarderProperty', strategy:
@@ -13,6 +12,7 @@ properties(
     ]
 )
 node {
+    tools {nodejs "NODEJS"} 
     stage('Checkout') {
         //disable to recycle workspace data to save time/bandwidth
         deleteDir()
