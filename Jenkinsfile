@@ -1,5 +1,5 @@
 #!groovy
-
+tools {nodejs "NODEJS"} 
 properties(
     [
         [$class: 'BuildDiscarderProperty', strategy:
